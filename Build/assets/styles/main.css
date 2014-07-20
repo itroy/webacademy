@@ -1,0 +1,17 @@
+/*fonts*/
+@font-face {
+    font-family: '/assets/webfonts/BLOKKRegular';
+    src: url('/assets/webfonts/BLOKKRegular.eot');
+    src: url('/assets/webfonts/BLOKKRegular.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/BLOKKRegular.woff') format('woff'),
+         url('/assets/webfonts/BLOKKRegular.svg#BLOKKRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Enteties*/
+body {
+}
+.container p {
+  font-family: 'BLOKKRegular';
+}
