@@ -1,17 +1,111 @@
-/*fonts*/
-@font-face {
-    font-family: '/assets/webfonts/BLOKKRegular';
-    src: url('/assets/webfonts/BLOKKRegular.eot');
-    src: url('/assets/webfonts/BLOKKRegular.eot?#iefix') format('embedded-opentype'),
-         url('/assets/webfonts/BLOKKRegular.woff') format('woff'),
-         url('/assets/webfonts/BLOKKRegular.svg#BLOKKRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+
+/*
+font-family:'Avenir LT W01 45 Book';
+font-family:'AvenirLTW01-45BookObliq';
+font-family:'Avenir LT W01 95 Black';
+font-family:'AvenirLTW01-95BlackObli';
+*/
+
+/*HTML Enteties*/
+html,body {
+  height:100%;
 }
 
-/*Enteties*/
 body {
+  font-family:'Avenir W01';
+  text-align: center;
+  font-weight: 200;
+  font-style: normal;
+  color: #4A4A4A;
 }
-.container p {
-  font-family: 'BLOKKRegular';
+h1,h2,h3,h4,h6,h6,strong {
+  font-weight:900;
+}
+h1 i {
+  font-style:normal;
+  font-weight: 200;
+  color: #FEF1CC;
+}
+h2 {
+  font-weight: 200;
+}
+h2 + aside, #learn aside {
+
+  font-size: 18px;
+  line-height: 25px;
+}
+h3 {
+  text-transform: uppercase;
+  color: #B3BEC4;
+  font-size: 1.2em;
+}
+section {
+  width:100%;
+
+}
+.container-fluid > h2 {
+  margin-top:3em;
+}
+/* Components */
+
+.jumbotron {
+  background-color: #15B0BF;
+  color: white;
+  height:700px;
+  margin-bottom: 0;
+}
+.jumbotron p {
+  font-size: 14px;
+  color: #2C5871;
+  line-height: 19px;
+  /* Hurry: */
+}
+
+.jumbotron aside {
+  font-size: 26px;
+  color: #FFFFFF;
+  position:relative;
+  padding-top: 0.6em;
+  /* simple seminars for : */
+}
+.home-graphic {
+  width: 233px;
+  height: 246px;
+  left: -20px;
+  position:relative;
+  background: url('img/briefcase-graphic-png.png');
+  display:inline-block;
+}
+
+.col-md-4 p {
+  font-family: "BLOKKNeue-Regular", serif;
+}
+
+.register-btn {
+  width:400px;
+  height:86px;
+  border:0;
+  border-radius: 60px;
+  /* Rectangle 8: */
+  background: #F99B1C;
+  -moz-box-shadow:    0px 4px 0px 0px rgba(0,0,0,0.04);
+  box-shadow:         0px 4px 0px 0px rgba(0,0,0,0.04);
+  font-size: 28px;
+  color: #FFFFCF;
+  line-height: 27px;
+  position:relative;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  /* register your intere: */
+}
+#learn .row {
+  margin-top: 5em;
+}
+#learn .row + aside {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+#learn {
+  min-height: 960px;
+  background: #FFFBEE;
 }

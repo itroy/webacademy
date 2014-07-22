@@ -10,15 +10,20 @@
 	<string>b2079fe10151ad0eef6cc553b7369ec78d67b9b5</string>
 	<key>fonts</key>
 	<array>
-		<string>AvenirNext-Regular</string>
-		<string>AvenirNext-Bold</string>
-		<string>AvenirNext-Heavy</string>
 		<string>ProximaNova-Light</string>
+		<string>VAGRoundedBlackSSK-Bold</string>
+		<string>AvenirNext-Bold</string>
+		<string>ProximaNova-Regular</string>
+		<string>ProximaNova-Extrabld</string>
+		<string>AvenirNext-Regular</string>
+		<string>AvenirNext-DemiBold</string>
+		<string>AvenirNext-Italic</string>
+		<string>AvenirNext-BoldItalic</string>
 		<string>Palatino-Italic</string>
 		<string>AvenirNext-Medium</string>
 	</array>
 	<key>length</key>
-	<integer>1315395</integer>
+	<integer>3311108</integer>
 	<key>version</key>
 	<integer>37</integer>
 </dict>
