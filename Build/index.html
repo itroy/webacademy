@@ -2,28 +2,6 @@
 <html lang="en">
 <head>
   
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
   <meta charset="UTF-8">
   <title>Web Academy | The learning resource for small business in Perth, Western Australia</title>
 
@@ -61,7 +39,7 @@
       simple seminars for small business and marketers.
       </aside>
       <p><strong>Take control of your website.</strong> Opening night: Wed August 13, 2014.</p>
-      <button class="register-btn">register your interest</button>
+      <button class="lge-btn">register your interest</button>
       <p>Have a team? Make a group booking and save.</p>
     </div>
   </div>
@@ -115,17 +93,28 @@
     </div>
   </section>
 
-  <div class="container-fluid">
-    <h2>One-to-one consulting, seminars and resources</h2>
-    <aside>We cover a broad range of topics, including:</aside>
-
-
-
-  </div>
-
-  <!-- Offering learning and resources for the following topics: -->
+  <section id="why">
+    <div class="container-fluid">
+      <img src="assets/img/icon-thumbsup.png" alt="Good Online Strategy">
+      <h4>We help you discover the right online strategy for your organisation.</h4>
+      <aside>We bridge the gap between business and website design agency, giving you the tools to plot your path from bricks and mortar to online. We empower entrepreneurs, business owners, marketing teams and staff through providing education, advice and know-how from seasoned professionals.</aside>
+      <img src="assets/img/icon-thumbsup.png" alt="Good Online Strategy">
+      <h4>Coming to an area near you.</h4>
+      <aside>With affordable group seminars starting at only $39 per head, there is no business to large, or small to benefit. Our trainers have a proven track record with well known brands, agencies & startups at any stage. From planning to get online, to ongoing online marketing strategy and website advice, we aim to provide the topics that you need most. If this sounds like a helpful service for your business, make sure to register your interest.</aside>
+      <button class="lge-btn">Find us by postcode</button>
+    </div>
+</section>
 
   <!-- About the founder (me) / Background -->
+  <section id="about">
+    <img src="assets/img/troy-ginbey.png" alt="Troy Ginbey, Founder of Web Academy">
+    <div class="aside">Troy Ginbey</div>
+    <p>Founder of web<strong>academy&tm;</strong></p>
+    <h5>Troy’s career has included co-founding respected Perth digital agency,
+Tune In Digital, leading design nationally at DMG Radio`   Australia (Nova Radio Network), and over 12 years experience in strategic, design and marketing roles.</h5>
+    <p>His core skills: user experience, digital strategy, interface & interaction design, development, mobile, apps, SEO, SEM, emarketing, social networking, video production, graphic design, corporate identity.</p>
+    <p>He is a passionate creative thinker and problem solver for clients around the globe.</p>
+  </section>
 
   <!-- Where / venue -->
 
