@@ -96,7 +96,16 @@ section {
   position:relative;
   margin-top: 0.6em;
   margin-bottom: 0.6em;
+  -webkit-transition: color 0.2s ease-out;
+          transition: color 0.2s ease-out;
+  -webkit-transition: background 0.2s ease-out;
+          transition: background 0.2s ease-out;
+
   /* register your intere: */
+}
+.lge-btn:hover {
+  background: white;
+  color: #2C5871;
 }
 
 /* Sections */
@@ -113,23 +122,65 @@ section#learn {
 }
 
 section#why {
-  background: #15B0BF;
+  background: #F99B1C;
   color:white;
+}
+#why > .container::after {
+  content: url(../img/rocket-world.png);
+  position:absolute;
+  margin: -176px auto;
+  right: 160px;
+
 }
 section#why button {
   border-radius: 60px;
-/* Rectangle 8: */
-background: #FFFFFF;
--moz-box-shadow:    0px 10px 20px 0px rgba(67,205,230,0.14);
-box-shadow:         0px 10px 20px 0px rgba(67,205,230,0.14);
-font-family: ProximaNova-Regular;
-font-size: 28px;
-color: #15B0BF;
-line-height: 34px;
+  /* Rectangle 8: */
+  background: #FFFFFF;
+  -moz-box-shadow:    0px 10px 20px 0px rgba(67,205,230,0.14);
+  box-shadow:         0px 10px 20px 0px rgba(67,205,230,0.14);
+  font-size: 28px;
+  color: #F99B1C;
+  line-height: 34px;
+  margin-top: 2em;
+  margin-bottom: 100px;
 
-/* Find us by postcode: */
 }
-section#why h3 {
-  margin-top: 3em;
-  margin-bottom: 3em;
+section#why aside {
+  font-size:18px;
+}
+section#why h4 {
+  margin-top: 2em;
+  font-size:24px;
+}
+section#why .icon {
+  margin-top:100px;
+}
+
+/* About */
+section#about {
+  background: #24333A;
+  color: #B3BEC4;
+  font-size: 16px;
+}
+section#about img {
+  margin-top: 130px;
+}
+
+section#about h5, section#about aside, section#about aside + p {
+  color: #DBE8EF;
+}
+section#about h5 {
+  padding-top: 36px;
+  font-size: 24px;
+
+}
+section#about aside {
+  font-size:18px;
+  margin-top: 36px;
+}
+section#about p:last-child {
+  padding-bottom: 100px;
+}
+section#register {
+  background: #15B0BF;
 }
