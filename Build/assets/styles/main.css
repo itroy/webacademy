@@ -16,15 +16,18 @@ body {
   text-align: center;
   font-weight: 200;
   font-style: normal;
-  color: #4A4A4A;
+  color: #000;
 }
 h1,h2,h3,h4,h6,h6,strong {
-  font-weight:900;
+  font-weight:400;
+  /* font-family:'Apollo W01'; */
+  font-family:'Georgia';
+}
+h1 {
+  font-size: 4em;
 }
 h1 i {
-  font-style:normal;
-  font-weight: 200;
-  color: #FEF1CC;
+  font-style:italic;
 }
 h2 {
   font-weight: 200;
@@ -49,8 +52,7 @@ section {
 /* Components */
 
 .jumbotron {
-  background-color: #15B0BF;
-  color: white;
+  background-color: white;
   height:700px;
   margin-bottom: 0;
 }
@@ -61,11 +63,9 @@ section {
   /* Hurry: */
 }
 
-.jumbotron aside {
-  font-size: 26px;
-  color: #FFFFFF;
+#tagline {
+  font-size: 16px;
   position:relative;
-  padding-top: 0.6em;
   /* simple seminars for : */
 }
 .home-graphic {
